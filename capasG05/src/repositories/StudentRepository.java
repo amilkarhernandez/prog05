@@ -15,6 +15,10 @@ public class StudentRepository {
         return list;
     }
 
+    public void getAllStudents(){
+        list.forEach(System.out::println);
+    }
+
     public Student getByCode(int code){
         for(Student s: list){
             if(s.getCode() == code){
